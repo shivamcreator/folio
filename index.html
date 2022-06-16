@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Shivam Goyal| Frontend Developer</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/shivamcreator/folio/main/images/sg-logo.png?token=GHSAT0AAAAAABVVW237HB656TLMLLO4LWZGYVLB5WQ">
+    <link rel="icon" type="image/x-icon" href="logo.img">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="container page">
+        <header id="header">
+            <div class="header-wrapper">
+                <span class="logo">
+                    <img src="https://raw.githubusercontent.com/shivamcreator/folio/main/images/sg-logo.png?token=GHSAT0AAAAAABVVW237HB656TLMLLO4LWZGYVLB5WQ" />
+                </span>
+                <nav>
+                    <ul id="header-ul" class="header-ul white small">
+                        <li class="home glow small white ul"><a   onclick="changeScreen(this)">Home</a></li>
+                        <li class="about small white ul"><a   onclick="changeScreen(this)">About</a></li>
+                        <li class="services small white ul"><a   onclick="changeScreen(this)">Tech-Stack</a></li>
+                        <li class="contact small white ul"><a  onclick="changeScreen(this)">Contact Me</a></li>
+                        <li><button class="btn small btn-an"  onclick="hireMe()">Let' Connect</button></li>
+                    </ul>
+
+                </nav>
+            </div>
+
+        </header>
+        <div class="container-wrapper" id="op">
+
+
+            <section id="home" class=" home inside-page  current section">
+                <div class="content">
+                    <div class="section-left">
+                        <div class="text-hi">
+                            <p class="text small white">
+                                HI THERE
+                                <img class="emoji" src="https://www.kemiadeleke.com/media/emoji.svg" />
+                                I'M
+                            </p>
+                        </div>
+                        <div class="content-text">
+                            <span class="text large white">Shivam Goyal</span>
+                            <span class="text small green">
+                                FRONTEND DEVELOPER
+
+                            </span>
+
+                            <span class="text small white intro-text">I’m a professional  Software Developer with Front-End development skills .</span>
+                            <button class="btn">
+                                <span class="medium black btn-an" onclick="hireMe()">
+                                    Hire Me
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="section-right">
+                        <center>
+                            <div id="bitmoji-wrapper">
+                                <img class="img-wrapper" src="https://raw.githubusercontent.com/shivamcreator/folio/main/images/bitmoji.png?token=GHSAT0AAAAAABVNGTXVFTAUGJOATSOMO23AYVLB5GQ" />
+
+                            </div>
+                        </center>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section" id="about">
+                <div class="content justify-center">
+                    <div class="about-text">
+                        <div class="header-about-me header">
+                            <div class="header-text1 glow small">
+                                <span>Who am I</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="header-text2"><h3 class="medium">About Me</h3></div>
+                        </div>
+                        <div class="text intro-text">
+                            <p class=" small white intro-text">I’m Shivam Goyal, a professional and talented Software Developer with front-end development skills. </p>
+                            <p class="text black small intro-text"> I am pursuing Btech. from Dronacharya College Of Engineering,Gurugram in the field of Computer Science. I develop websites with HTML, CSS, and JavaScript. And I have created some projects using React also. I have good problem-solving skills. Also, I am learning Python & JAVA. And I love to do Data Structure in my free time.</p>
+                            <p class="text black small intro-text">That's all about me. And I would love to hear your story :) </p>
+                        </div>
+                        <div class="flex justify-center align-center btn-an">
+                            <button class="btn small btn-an " onclick="downloadCV()"><span>Download CV</span></button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+            <section id="services" class="services section">
+                <div class="content flex">
+                    <div class="header services-header">
+                        <div class="header-text1 glow">
+                            <span class="small">What I do</span>
+                            <span class="line"></span>
+                        </div>
+                        <div class="header-text2 medium">
+                            <h3>Tech Stack</h3>
+                        </div>
+                    </div>
+                    <div class="services-container">
+                        <div class="section-left">
+                            <div id="tech-stack">
+                                <div class="tech-stack-row flex-row">
+                                    <div>
+                                        <button class="skill-btn active" onclick="changeDescription(this)" data-index=0>
+                                            <img src="https://user-images.githubusercontent.com/85919501/128709937-80b78fc4-841e-4bbc-8f4a-3f8592046c54.png?techName=undefined&projectsCount=10&experience=0.9" alt="JS" />
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="skill-btn" onclick="changeDescription(this)" data-index=1>
+                                            <img src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png" alt="React" />
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="skill-btn" onclick="changeDescription(this)" data-index=2>
+                                            <img src="https://user-images.githubusercontent.com/85919501/128709932-8d785243-3226-40fd-b492-f97401d9f458.png?techName=undefined&projectsCount=10&experience=0.9" alt="HTML5" />
+                                        </button>
+                                    </div>
+
+
+                                </div>
+                                <div class="tech-stack-row flex-row">
+                                    <div>
+                                        <button class="skill-btn" onclick="changeDescription(this)" data-index=3>
+                                            <img src="https://avatars.githubusercontent.com/u/6853419?s=200&v=4" alt="Reat-BS" />
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="skill-btn" onclick="changeDescription(this)" data-index=4>
+                                            <img src="https://www.logo.wine/a/logo/Bootstrap_(front-end_framework)/Bootstrap_(front-end_framework)-Logo.wine.svg" alt="React-BS" />
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="skill-btn" onclick="changeDescription(this)" data-index=5>
+                                            <img src="http://clipart-library.com/images_k/python-logo-transparent/python-logo-transparent-15.png" alt="Python" />
+                                        </button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="section-right flex-center">
+                            <div class="tech-stack-description" id="decription-box">
+                                <div class="description-img">
+                                    <img src="https://user-images.githubusercontent.com/85919501/128709937-80b78fc4-841e-4bbc-8f4a-3f8592046c54.png?techName=undefined&projectsCount=10&experience=0.9" alt="logo" />
+                                </div>
+                                <div class="description-title">
+                                    <span class="text green medium-l" id="skillll">Javascript</span>
+                                </div>
+                                <div class="project-count">
+                                    <span class="text white medium fn-700">Number of Projects:</span>
+                                    <span class="text white medium" id="count">2</span>
+                                </div>
+                                <div class="experience">
+                                    <span class="text white medium fn-700">Experience:</span>
+                                    <span class="text white medium" id="exp-count">1 yrs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <section id="contact" class="contact section">
+                <div class="content flex">
+
+                    <div class="header contact-header">
+                        <div class="header-text1 glow">
+                            <span class="small">Contact Me</span>
+                            <span class="line"></span>
+                        </div>
+                        <div class="header-text2 medium">
+                            <h3>Get in Touch</h3>
+
+                        </div>
+                        <div class="header-text3">
+                            <p class="description small">
+                                I am just a click away : )
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-inner">
+                        <div class="section-left">
+                            <div class="column column-one">
+                                <div class="contact-image">
+                                    <img src="https://www.kemiadeleke.com/media/contact-address.svg" alt="">
+                                </div>
+                                <p class="small">Gurugram , India</p>
+                            </div>
+                            <div class="column column-two">
+                                <div class="contact-image">
+                                    <img src="https://www.kemiadeleke.com/media/contact-email.svg" alt="">
+                                </div>
+                                <a target="_blank"  class="small white" href="mailto:shivamr.kgoyal@gmail.com">shivamr.kgoyal@gmail.com</a>
+                            </div>
+                            <div class="column column-three">
+                                <div class="contact-image">
+                                    <img src="https://www.kemiadeleke.com/media/contact-phone.svg" alt="">
+                                </div>
+                                <a target="_blank"  href="tel:+9172899-02665" class="small white">+91 72899-02665</a>
+                            </div>
+                        </div>
+                        <div class="section-right" id="contact-data">
+                            <form class="contact-form">
+                                <input type="text" placeholder="Full Name" name="name" class="small data">
+                            </form>
+                            <div class="form-two">
+                                <input type="email" placeholder="Email" name="name" class="small data email" id="email">
+                                </div>
+                            <div class="form-two">   
+                                <input type="number" placeholder="Phone Number" name="name"  class="small data number">
+                            </div>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"  class="small data"></textarea>
+                            <button class="form-submit small btn-an " type="submit" onclick="sendEmail()" id="sendEmail-btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <footer id="footer">
+            <div class="footer-wrapper">
+                <div class="footer-left">
+                    <div class="logo-me">
+                        <a target="_blank"  href="">
+                            <img src="https://raw.githubusercontent.com/shivamcreator/folio/main/images/sg-logo.png?token=GHSAT0AAAAAABVVW237HB656TLMLLO4LWZGYVLB5WQ" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="logo-section">
+                    <a target="_blank"  href="https://www.linkedin.com/in/shivamgoyall/"> <img src="https://www.kemiadeleke.com/media/linkedin.svg" alt="link to linkedin account"> </a>
+                    <a target="_blank"  href="https://github.com/shivamcreator"> <img src="https://e7.pngegg.com/pngimages/914/758/png-clipart-computer-icons-logo-github-github-logo-logo-computer-program-thumbnail.png" alt="Github"> </a>
+                    <a target="_blank"  href="https://api.whatsapp.com/send?phone=917289902665&text=Hello%20Shivam%F0%9F%99%83%20!!   "> <img src="https://www.kemiadeleke.com/media/whatsapp.svg" alt="link to whatsapp"> </a>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <div class="random-box">
+        <div class="square move" id="square-1"></div>
+        <div class="tri move" id="triangle-1"></div>
+        <div class="square move" id="square-2"></div>
+        <div class="tri move" id="triangle-2"></div>
+
+    </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>
