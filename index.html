@@ -4,28 +4,30 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Shivam Goyal| Frontend Developer</title>
-    <link rel="icon" type="image/x-icon" href="Sg-logo.png">
+    <title>Shivam Goyal | Frontend Developer</title>
+    <link rel="icon" type="image/x-icon" href="">
     <link rel="icon" type="image/x-icon" href="logo.img">
-    <link rel="stylesheet" href="style.css?v=20220802" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div id="container page">
         <header id="header">
             <div class="header-wrapper">
                 <span class="logo">
-                    <img src="Sg-logo.png" />
+                    <img src="Img\Sg-logo.png" />
                 </span>
                 <nav>
                     <ul id="header-ul" class="header-ul white small">
-                        <li class="home glow small white ul"><a   onclick="changeScreen(this)">Home</a></li>
-                        <li class="about small white ul"><a   onclick="changeScreen(this)">About</a></li>
-                        <li class="services small white ul"><a   onclick="changeScreen(this)">Tech-Stack</a></li>
-                        <li class="contact small white ul"><a  onclick="changeScreen(this)">Contact Me</a></li>
-                        <li><button class="btn small btn-an"  onclick="hireMe()">Let' Connect</button></li>
+                        <li class="home glow medium white ul"><a onclick="changeScreen(this)">Home</a></li>
+                        <li class="about medium white ul"><a onclick="changeScreen(this)">About</a></li>
+                        <li class="services medium white ul"><a onclick="changeScreen(this)">Tech-Stack</a></li>
+                        <li class="contact medium white ul"><a onclick="changeScreen(this)">Contact Me</a></li>
+                        <li><button class="start-button btn medium bold-text" onclick="hireMe()">Let's Connect</button></li>
                     </ul>
 
                 </nav>
+                <span class="hamburger-menu" onclick="toggleNavBar();"></span>
+                <span class="cross" onclick="toggleNavBar();"></span>
             </div>
 
         </header>
@@ -35,7 +37,7 @@
             <section id="home" class=" home inside-page  current section">
                 <div class="content">
                     <div class="section-left">
-                        <div class="text-hi">
+                        <div class="medium">
                             <p class="text small white">
                                 HI THERE
                                 <img class="emoji" src="https://www.kemiadeleke.com/media/emoji.svg" />
@@ -43,15 +45,15 @@
                             </p>
                         </div>
                         <div class="content-text">
-                            <span class="text large white">Shivam Goyal</span>
-                            <span class="text small green">
+                            <span class="text large-text white">Shivam Goyal</span>
+                            <span class="text large-text green">
                                 FRONTEND DEVELOPER
 
                             </span>
 
-                            <span class="text small white intro-text">I’m a professional  Software Developer with Front-End development skills .</span>
-                            <button class="btn">
-                                <span class="medium black btn-an" onclick="hireMe()">
+                            <span class="text small white intro-text">I’m a professional  Software Developer with front end development skills .</span>
+                            <button class="btn hire-me">
+                                <span class="medium black bold-text " onclick="hireMe()">
                                     Hire Me
                                 </span>
                             </button>
@@ -60,7 +62,7 @@
                     <div class="section-right">
                         <center>
                             <div id="bitmoji-wrapper">
-                                <img class="img-wrapper" src="Bitmoji.png" />
+                                <img class="img-wrapper" src="Img\Bitmoji.png" />
 
                             </div>
                         </center>
@@ -73,19 +75,23 @@
                 <div class="content justify-center">
                     <div class="about-text">
                         <div class="header-about-me header">
-                            <div class="header-text1 glow small">
+                            <div class="header-text1 glow large-text bold-text">
                                 <span>Who am I</span>
                                 <span class="line"></span>
                             </div>
                             <div class="header-text2"><h3 class="medium">About Me</h3></div>
                         </div>
                         <div class="text intro-text">
-                            <p class=" small white intro-text">I’m Shivam Goyal, a professional and talented Software Developer with front-end development skills. </p>
-                            <p class="text black small intro-text"> I am pursuing Btech. from Dronacharya College Of Engineering,Gurugram in the field of Computer Science. I develop websites with HTML, CSS, and JavaScript. And I have created some projects using React also. I have good problem-solving skills. Also, I am learning Python & JAVA. And I love to do Data Structure in my free time.</p>
+                            <p class=" small white intro-text">I’m Shivam Goyal, a professional and talented Software Developer with front-end development skills and good problem-solving skills. </p>
+                            <p class="text black small intro-text">
+                                I develop websites with HTML, CSS, and JavaScript. And I have created some projects using React also. I love to do Data Structure in my free time.
+                                I like to learn a lot of new skills and experiment with code!
+                                For more you can downaload my resume!
+                            </p>
                             <p class="text black small intro-text">That's all about me. And I would love to hear your story :) </p>
                         </div>
                         <div class="flex justify-center align-center btn-an">
-                            <button class="btn small btn-an " onclick="downloadCV()"><span>Download CV</span></button>
+                            <button class="btn medium bold-text"  onclick="downloadCV()"><span>Download CV</span></button>
                         </div>
                     </div>
 
@@ -96,8 +102,8 @@
             <section id="services" class="services section">
                 <div class="content flex">
                     <div class="header services-header">
-                        <div class="header-text1 glow">
-                            <span class="small">What I do</span>
+                        <div class="header-text1 glow large-text bold-text">
+                            <span >What I do</span>
                             <span class="line"></span>
                         </div>
                         <div class="header-text2 medium">
@@ -139,7 +145,7 @@
                                     </div>
                                     <div>
                                         <button class="skill-btn" onclick="changeDescription(this)" data-index=5>
-                                            <img src="http://clipart-library.com/images_k/python-logo-transparent/python-logo-transparent-15.png" alt="Python" />
+                                            <img src="https://thumbs.dreamstime.com/b/java-logo-java-logo-white-background-vector-format-available-127575473.jpg" alt="HTML5" />
                                         </button>
                                     </div>
 
@@ -158,7 +164,7 @@
                                 </div>
                                 <div class="project-count">
                                     <span class="text white medium fn-700">Number of Projects:</span>
-                                    <span class="text white medium" id="count">2</span>
+                                    <span class="text white medium" id="count">4</span>
                                 </div>
                                 <div class="experience">
                                     <span class="text white medium fn-700">Experience:</span>
@@ -175,8 +181,8 @@
                 <div class="content flex">
 
                     <div class="header contact-header">
-                        <div class="header-text1 glow">
-                            <span class="small">Contact Me</span>
+                        <div class="header-text1 glow large-text bold-text">
+                            <span>Contact Me</span>
                             <span class="line"></span>
                         </div>
                         <div class="header-text2 medium">
@@ -207,7 +213,7 @@
                                 <div class="contact-image">
                                     <img src="https://www.kemiadeleke.com/media/contact-phone.svg" alt="">
                                 </div>
-                                <a target="_blank"  href="tel:+9172899-02665" class="small white">+91 72899-02665</a>
+                                <a target="_blank"  href="tel:+91-7289902665" class="small white">+91 72899-02665</a>
                             </div>
                         </div>
                         <div class="section-right" id="contact-data">
@@ -221,7 +227,7 @@
                                 <input type="number" placeholder="Phone Number" name="name"  class="small data number">
                             </div>
                             <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"  class="small data"></textarea>
-                            <button class="form-submit small btn-an " type="submit" onclick="sendEmail()" id="sendEmail-btn">Submit</button>
+                            <button class="form-submit btn small bold-text" type="submit" onclick="sendEmail()" id="sendEmail-btn">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -234,14 +240,14 @@
                 <div class="footer-left">
                     <div class="logo-me">
                         <a target="_blank"  href="">
-                            <img src="https://github.com/shivamcreator/folio/blob/main/Sg-logo.png?raw=true" alt="">
+                            <img src="Img\Sg-logo.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="logo-section">
                     <a target="_blank"  href="https://www.linkedin.com/in/shivamgoyall/"> <img src="https://www.kemiadeleke.com/media/linkedin.svg" alt="link to linkedin account"> </a>
                     <a target="_blank"  href="https://github.com/shivamcreator"> <img src="https://e7.pngegg.com/pngimages/914/758/png-clipart-computer-icons-logo-github-github-logo-logo-computer-program-thumbnail.png" alt="Github"> </a>
-                    <a target="_blank"  href="https://api.whatsapp.com/send?phone=917289902665&text=Hello%20Shivam%F0%9F%99%83%20!!   "> <img src="https://www.kemiadeleke.com/media/whatsapp.svg" alt="link to whatsapp"> </a>
+                    <a target="_blank"  href="https://wa.me/7289902665?text=Hi%20there%20%2C%20nice%20to%20meet%20you!"> <img src="https://www.kemiadeleke.com/media/whatsapp.svg" alt="link to whatsapp"> </a>
                 </div>
             </div>
 
