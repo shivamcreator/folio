@@ -169,7 +169,7 @@ body {
     cursor: pointer;
     text-align: center;
     display: none;
-    background: url(Img/header-hamburger-menu.png) no-repeat center center;
+    background: url(header-hamburger-menu.png) no-repeat center center;
     background-color: #0fb;
     background-size: 65%;
 }
@@ -302,7 +302,7 @@ margin-left:1rem;
     
 }
 .cross {
-    background: url(Img/header-cross-button.svg) no-repeat center center;
+    background: url(header-cross-button.svg) no-repeat center center;
     width: 2.7rem;
     height: 2.7rem;
     margin: auto 0;
