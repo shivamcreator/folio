@@ -1,15 +1,15 @@
 "use strict"
-var skill = [{ skillName: "JavaScript", img: "https://user-images.githubusercontent.com/85919501/128709937-80b78fc4-841e-4bbc-8f4a-3f8592046c54.png?techName=undefined&projectsCount=10&experience=0.9", numberOfProjects: 2, experience: 1 },
+var skill = [{ skillName: "JavaScript", img: "https://user-images.githubusercontent.com/85919501/128709937-80b78fc4-841e-4bbc-8f4a-3f8592046c54.png?techName=undefined&projectsCount=10&experience=0.9", numberOfProjects: 4, experience: 1 },
     {
-        skillName: "React", img: "https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png", numberOfProjects: 1, experience: 0.6 
+        skillName: "React", img: "https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png", numberOfProjects: 2, experience: .7
     }, {
-        skillName: "HTML", img: "https://user-images.githubusercontent.com/85919501/128709932-8d785243-3226-40fd-b492-f97401d9f458.png?techName=undefined&projectsCount=10&experience=0.9", numberOfProjects: 3, experience: 1
+        skillName: "HTML", img: "https://user-images.githubusercontent.com/85919501/128709932-8d785243-3226-40fd-b492-f97401d9f458.png?techName=undefined&projectsCount=10&experience=0.9", numberOfProjects: 4, experience: 1
     }, {
-        skillName: "React Bootstrap", img: "https://avatars.githubusercontent.com/u/6853419?s=200&v=4", numberOfProjects: 1, experience: 0.5 
+        skillName: "React Bootstrap", img: "https://avatars.githubusercontent.com/u/6853419?s=200&v=4", numberOfProjects: 4, experience: 1
     }, {
-        skillName: "Bootstrap", img: "https://www.logo.wine/a/logo/Bootstrap_(front-end_framework)/Bootstrap_(front-end_framework)-Logo.wine.svg", numberOfProjects: 2, experience: 1
+        skillName: "Bootstrap", img: "https://www.logo.wine/a/logo/Bootstrap_(front-end_framework)/Bootstrap_(front-end_framework)-Logo.wine.svg", numberOfProjects: 4, experience: 1
     }, {
-        skillName: "Python", img: "http://clipart-library.com/images_k/python-logo-transparent/python-logo-transparent-15.png", numberOfProjects: 2, experience: 1
+        skillName: "Java", img: "https://thumbs.dreamstime.com/b/java-logo-java-logo-white-background-vector-format-available-127575473.jpg", numberOfProjects: 4, experience: 1
     }];
 function gebid(id) {
     return document.getElementById(id);
@@ -31,11 +31,8 @@ function change() {
             var x = random[i].id;
             var ranTop = Math.floor(Math.random() *460);
             var ranLeft = Math.floor(Math.random() * 90);
-            if (ranTop<250) {
-                document.getElementById(x).style.top = ranTop+"%";
-                document.getElementById(x).style.left = ranLeft+"%";
-            }
-
+            document.getElementById(x).style.top = ranTop+"%";
+            document.getElementById(x).style.left = ranLeft+"%";
     }
     }
 
@@ -115,6 +112,7 @@ function changeScreen(self) {
         behavior: 'smooth'
     });
     sectionDiv.classList.add("active");
+    toggleNavBar();
 
 }
 function changeDescription(self) {
@@ -129,7 +127,7 @@ function changeDescription(self) {
     self.classList.add("active");
 }
 function changeHeading() {
-    var a = "Shivam Goyal | Frontend Developer";
+    var a = "Shivam Goyal| Frontend Developer";
     if (document.title.length == a.length) {
         document.title = "Welcome";
     }
@@ -137,7 +135,7 @@ function changeHeading() {
         document.title = a;
     }
 }
-setInterval(change, 1000);
+setInterval(change, 3000);
 setInterval(changeHeading, 3000);
 window.addEventListener("scroll", changeHeader)
 window.addEventListener(onscroll, sp);
@@ -145,10 +143,13 @@ window.addEventListener(onscroll, sp);
 
 function sendEmail() {
     var flag = true;
+    var subject="hi";
     var arr = document.getElementsByClassName("data");
-    for (var i = 0; i < arr.length; i++) {
+    console.log(arr);
+    for (var i = 0; i < 4; i++) {
         if (arr[i].classList.contains("email")) {
             flag = validateEmail(arr[i].value);
+            
         }
         else if (arr[i].classList.contains("number")) {
             flag = validateNumber(arr[i].value);
@@ -162,21 +163,25 @@ function sendEmail() {
     }
     else {
         var btn = gebid("sendEmail-btn");
+        btn.setAttribute('href', "mailto:shivamr.kgoyal@gmail.com?subject=" + subject);
         setTimeout(function (text) {
             btn.innerText = "Submit";
-        }, 3000);
+        }, 3000);   
+        
         btn.innerText = "Sent";
     }
 }
 function hireMe() {
-    gebid("contact").scrollIntoView({ behavior: "smooth"});
+    gebid("contact").scrollIntoView({ behavior: "smooth" });
+    toggleNavBar();
 }
 function downloadCV() {
-    window.open("21117--ShivamGoyal.pdf");
+    window.open("ShivamGoyalResume.pdf");
 }
 function validateEmail(input) {
     var emailValidRegex = /^([a-zA-Z\d])([a-zA-Z\d\.]+([\-_+]{1})?)+@([a-zA-Z\d-]+)\.([a-z]{2,10})(\.[a-z]{2,10})?$/;
     if (input.match(emailValidRegex)) {
+        console.log("matched")
         return true;
     }
     return false;
@@ -184,7 +189,52 @@ function validateEmail(input) {
 function validateNumber(input) {
     var phoneValidRegex = /^((\+|(00))?91|0)?[6789]{1}\d{9}$/;
     if (input.match(phoneValidRegex)) {
+        console.log("nummatched")
         return true;
     }
     return false;
+}
+
+
+var scrollUp = "scroll-up";
+var scrollDown = "scroll-down";
+var lastScroll = 0;
+
+
+
+var body = document.body;
+window.addEventListener("scroll", () => {
+    var currentScroll = window.pageYOffset;
+    if (currentScroll <= 0) {
+        body.classList.remove(scrollUp);
+        return;
+    }
+
+    if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+        // down
+        body.classList.remove(scrollUp);
+        body.classList.add(scrollDown);
+    } else if (
+        currentScroll < lastScroll &&
+        body.classList.contains(scrollDown)
+    ) {
+        // up
+        body.classList.remove(scrollDown);
+        body.classList.add(scrollUp);
+    }
+    lastScroll = currentScroll;
+});
+
+
+function getBodyClassList() {
+    return document.body.classList;
+}
+function toggleNavBar() {
+    getBodyClassList().toggle("navbar-open");
+    if (getBodyClassList().contains("navbar-open")) {
+        gebid("header-ul").classList.add("header-show-overlay");
+        gebid("header-ul").style.opacity = "1";
+    } else {
+        gebid("header-ul").classList.remove("header-show-overlay");
+    }
 }
