@@ -176,7 +176,7 @@ function hireMe() {
     toggleNavBar();
 }
 function downloadCV() {
-    window.open("ShivamGoyal-FrontEndDeveloper-2022.pdf");
+    window.open("ShivamGoyal.pdf");
 }
 function validateEmail(input) {
     var emailValidRegex = /^([a-zA-Z\d])([a-zA-Z\d\.]+([\-_+]{1})?)+@([a-zA-Z\d-]+)\.([a-z]{2,10})(\.[a-z]{2,10})?$/;
